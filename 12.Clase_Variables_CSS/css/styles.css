@@ -8,6 +8,8 @@
     src: url("../assets/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf") format("truetype-variations");
 }
 
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -19,7 +21,7 @@ html{
 }
 
 body{
-    background-color: #F6E7BC;
+    background-color: var(--color-fondo-luz);
 }
 
 .encabezado-principal{
@@ -61,31 +63,32 @@ body{
 }
 
 .contenido-ppal > section > h1{
-    color: #0992C2;
-    font-family: "Inter", sans-serif;
-    font-size: 6rem;
+    color: var(--color-titulo-luz);
+    font-family: var(--fuente-titulo);
+    font-size: var(--fuente-tamano-titulo);
     font-weight: 100;
     margin-bottom: 1rem;
+    padding: var(--relleno-titulo);
 }
 
 .contenido-ppal > section > h2{
-    color: #0992C2;
-    font-family: "Inter", sans-serif;
+    color: var(--color-subtitulo-luz);
+    font-family: var(--fuente-titulo);
     font-weight: 100;
-    font-size: 4rem;
+    font-size: var(--fuente-tamano-subtitulo);
     margin-bottom: 1rem;
 }
 
 .contenido-ppal > section h3{
-    color: #0992C2;
+    color: var(--color-subtitulo-luz);
     font-family: "Inter", sans-serif;
     font-weight: 200;
-    font-size: 3rem;
+    font-size: var(--fuente-tamano-subtitulo2);
     margin-bottom: 1rem;
 }
 
 .contenido-ppal > section a{
-    color: #0B2D72;
+    color: var(--color-hiperlink-luz);
     font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 1.8rem;
@@ -95,10 +98,11 @@ body{
 }
 
 .contenido-ppal > section > p{
-    color: #0B2D72;
-    font-family: "Roboto", sans-serif;
-    font-size: 2.2rem;
+    color: var(--color-parrafo-luz);
+    font-family: var(--fuente-parrafo);
+    font-size: var(--fuente-tamano-parrafo);
     margin-bottom: 1rem;
+    padding: var(--relleno-parrafo);
 }
 
 .contenido-ppal > section > article > p{

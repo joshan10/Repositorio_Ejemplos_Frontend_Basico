@@ -1,0 +1,15 @@
+:root{
+    --color-fondo-luz: #15173D; 
+    --color-titulo-luz: #E491C9;
+    --color-subtitulo-luz: 982598;
+    --color-parrafo-luz: #F1E9E9;
+    --color-hiperlink-luz: #E491C9;
+    --fuente-titulo: "Inter", sans-serif;
+    --fuente-tamano-titulo: 6rem;
+    --fuente-tamano-subtitulo: 4rem;
+    --fuente-tamano-subtitulo2: 3rem;
+    --fuente-tamano-parrafo: 2.2rem;
+    --fuente-parrafo: "Roboto", sans-serif;
+    --relleno-titulo: 0.2rem;
+    --relleno-parrafo: 0.1rem;
+}
