@@ -4,63 +4,401 @@
     padding: 0;
 }
 
-.encabezado{
-    align-items: center;
-    background-color: blueviolet;
-    display: flex;
-    justify-content: space-between;
-    height: 15vh;
-    padding: 1% 5%;
-    width: 100vw;
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  /* CSS */
+    .encabezado{
+        align-items: center;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: space-between;
+        height: 15vh;
+        padding: 1% 5%;
+        width: 100vw;
+    }
+
+    .encabezado > img{
+        height: auto;
+        width: 100px;
+    }
+
+    .encabezado > nav > ul{
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+
+    .encabezado > nav > img{
+        display: none;
+        gap: 20px;
+        list-style: none;
+        width: 70px;
+    }
+
+    .encabezado > nav > ul > li > a{
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .contenido{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;  
+        justify-content: center;
+        padding: 2% 5%;
+    }
+
+    .contenido > picture{
+        align-items: center;
+        background-color: blueviolet;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 400px;
+        padding: 10px;
+        width: 300px;
+    }
+
+    .contenido > picture > img{
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .contenido > picture > h2{
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+  
 }
 
-.encabezado > img{
-    height: auto;
-    width: 100px;
+
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  /* CSS */
+  .encabezado{
+        align-items: center;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: space-between;
+        height: 15vh;
+        padding: 3% 5%;
+        width: 100vw;
+    }
+
+    .encabezado > img{
+        height: auto;
+        width: 70px;
+    }
+
+    .encabezado > nav > ul{
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+
+    .encabezado > nav > img{
+        display: none;
+        gap: 20px;
+        list-style: none;
+        width: 70px;
+    }
+
+    .encabezado > nav > ul > li > a{
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .contenido{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;  
+        justify-content: center;
+        padding: 2% 5%;
+    }
+
+    .contenido > picture{
+        align-items: center;
+        background-color: blueviolet;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 400px;
+        padding: 10px;
+        width: 300px;
+    }
+
+    .contenido > picture > img{
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .contenido > picture > h2{
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+  
 }
 
-.encabezado > nav > ul{
-    display: flex;
-    gap: 20px;
-    list-style: none;
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  .encabezado{
+        align-items: center;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: space-between;
+        height: 15vh;
+        padding: 3% 5%;
+        width: 100vw;
+    }
+
+    .encabezado > img{
+        height: auto;
+        width: 70px;
+    }
+
+    .encabezado > nav > ul{
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+
+    .encabezado > nav > img{
+        display: none;
+        gap: 20px;
+        list-style: none;
+        width: 70px;
+    }
+
+    .encabezado > nav > ul > li > a{
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .contenido{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;  
+        justify-content: center;
+        padding: 2% 5%;
+    }
+
+    .contenido > picture{
+        align-items: center;
+        background-color: blueviolet;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 300px;
+        padding: 10px;
+        width: 200px;
+    }
+
+    .contenido > picture > img{
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .contenido > picture > h2{
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+  
 }
 
-.encabezado > nav > ul > li > a{
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    text-decoration: none;
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  .encabezado{
+        align-items: center;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: space-between;
+        height: 15vh;
+        padding: 3% 5%;
+        width: 100vw;
+    }
+
+    .encabezado > img{
+        height: auto;
+        width: 70px;
+    }
+
+    .encabezado > nav > ul{
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+
+    .encabezado > nav > img{
+        display: none;
+        gap: 20px;
+        list-style: none;
+        width: 70px;
+    }
+
+    .encabezado > nav > ul > li > a{
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .contenido{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;  
+        justify-content: center;
+        padding: 2% 5%;
+    }
+
+    .contenido > picture{
+        align-items: center;
+        background-color: blueviolet;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 300px;
+        padding: 10px;
+        width: 200px;
+    }
+
+    .contenido > picture > img{
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .contenido > picture > h2{
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+  
 }
 
-.contenido{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;  
-    justify-content: center;
-    padding: 2% 5%;
-}
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
 
-.contenido > picture{
-    align-items: center;
-    background-color: blueviolet;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 400px;
-    padding: 10px;
-    width: 300px;
-}
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* CSS */
+  .encabezado{
+        align-items: center;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: space-between;
+        height: 15vh;
+        padding: 3% 5%;
+        width: 100vw;
+    }
 
-.contenido > picture > img{
-    border-radius: 10px;
-    width: 100%;
-}
+    .encabezado > img{
+        height: auto;
+        width: 70px;
+    }
 
-.contenido > picture > h2{
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
+    .encabezado > nav > ul{
+        display: none;
+        gap: 20px;
+        list-style: none;
+    }
+
+    .encabezado > nav > img{
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        width: 70px;
+    }
+
+    .encabezado > nav > ul > li > a{
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .contenido{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;  
+        justify-content: center;
+        padding: 2% 5%;
+    }
+
+    .contenido > picture{
+        align-items: center;
+        background-color: blueviolet;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 300px;
+        padding: 10px;
+        width: 200px;
+    }
+
+    .contenido > picture > img{
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .contenido > picture > h2{
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+  
 }

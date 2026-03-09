@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* vista de transicion En TODAS las páginas */
+
+
+body{
+    align-items: center;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+.encabezado1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+    width: 100%;
+}
+
+.encabezado1 > ul{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.encabezado1 > ul > li{
+    list-style: none;
+    margin: 0 20px;
+}
+
+.encabezado1 > ul > li > a{
+    background-color: white;
+    border: solid 2px black;
+    color: black;
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.encabezado1 > ul > li > a:visited{
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.card-image{
+    height: 300px;
+    width: 300px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-image img{
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+footer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    width: 100vw;
+}
+
+footer > span{
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+}
