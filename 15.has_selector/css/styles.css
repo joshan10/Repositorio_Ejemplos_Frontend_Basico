@@ -4,8 +4,29 @@
     padding: 0;
 }
 
-/* vista de transicion En TODAS las páginas */
+/* En TODAS las páginas */
+@view-transition {
+  navigation: auto;
+}
 
+/* Personalizar la animación */
+::view-transition-old(root) {
+  animation: fade-out 0.3s ease forwards;
+}
+
+::view-transition-new(root) {
+  animation: fade-in 0.3s ease forwards;
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 
 body{
     align-items: center;
@@ -14,10 +35,54 @@ body{
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+    transition: all 0.5s ease;
     width: 100vw;
 }
 
+.body-home{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
 
+#video-fondo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;   /* Cubre toda la pantalla sin deformarse */
+      z-index: -1;         /* Queda detrás de todo el contenido */
+}
+
+.body-nintendo{
+  background-image: url('../img/nintendo.jpg');
+  background-size: cover;  
+}
+
+.body-playstation{
+  background-image: url('../img/playstation.webp');
+  background-size: cover;  
+}
+
+.body-xbox{
+  background-image: url('../img/xbox.jpg');
+  background-size: cover;  
+}
+
+body:has(.encabezado1 > ul > li:nth-child(2):hover) {
+  background-image: url('../img/nintendo.jpg');
+  background-size: cover;
+}
+
+body:has(.encabezado1 > ul > li:nth-child(3):hover) {
+  background-image: url('../img/playstation.webp');
+  background-size: cover;
+}
+
+body:has(.encabezado1 > ul > li:nth-child(4):hover) {
+  background-image: url('../img/xbox.jpg');
+  background-size: cover;
+}
 
 .encabezado1{
     align-items: center;
@@ -71,6 +136,20 @@ body{
     transition: all 0.3s ease-in-out;
     
 }
+
+.card-image:has(img:hover){
+    background: cyan;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+}
+
+.card-image:has(img:hover) img {
+    transform: scale(1.03) rotate(-4deg);
+}
+
+
 
 footer{
     align-items: center;
