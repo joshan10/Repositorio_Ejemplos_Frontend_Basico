@@ -24,6 +24,7 @@ header{
 }
 
 header > h2{
+    animation: ticker-scroll 30s linear infinite;
     display: inline-block;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -34,6 +35,17 @@ header > h2{
     white-space: nowrap;
     overflow:auto;
 }
+
+@keyframes ticker-scroll {
+    100%{
+        transform: translateX(100%);
+    }
+    0%{
+        transform: translateX(-100%);
+    }
+}
+
+
 
 main{
     align-items: center;
@@ -71,6 +83,14 @@ main > button:hover{
     border-bottom: solid 5px yellow;
 }
 
+main > button:hover > h2{
+    color: yellow;
+}
+
+main:has(button:hover) .circulo {
+    animation: girar 0.5s linear infinite;
+}
+
 .circulo{
     background: conic-gradient(
         red     0deg,
@@ -87,6 +107,18 @@ main > button:hover{
     width: 200px;
 }
 
+
+
+@keyframes girar {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 footer{
     align-items: center;
     background-color: yellow;
@@ -98,6 +130,45 @@ footer{
     width: 100vw;
 }
 
+@keyframes vibrar {
+    0%, 85%, 100% {
+        transform: translate(0);
+        filter: blur(0px);
+    }
+
+    87% {
+        transform: translate(-4px, 2px);
+        filter: blur(1px);
+    }
+
+    89% {
+        transform: translate(4px, -2px);
+        filter: blur(2px);
+    }
+
+    91% {
+        transform: translate(-3px, 3px);
+        filter: blur(1.5px);
+    }
+
+    93% {
+        transform: translate(3px, -1px);
+        filter: blur(2px);
+    }
+
+    95% {
+        transform: translate(-2px, 2px);
+        filter: blur(1px);
+    }
+
+    97% {
+        transform: translate(2px, -2px);
+        filter: blur(0.5px);
+    }
+
+
+}
+
 footer > h2{
     animation: vibrar 5s infinite;
     color: black;
@@ -105,3 +176,7 @@ footer > h2{
     font-optical-sizing: auto;
     font-weight: 900;
 }
+
+
+
+
